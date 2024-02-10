@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        label {
+            display: block;
+
+        }
+
+        input::-webkit-input-placeholder {
+            color: white;
+        }
+
+
+        input[type="text"] {
+            text-overflow: ellipsis;
+            width: 400px;
+            height: 40px;
+            margin-top: 40px;
+            background-color: black;
+            color: #FAF9F7;
+            font-family: Arial;
+            font-size: 18px;
+            border: solid black;
+            border-radius: 15px;
+
+
+        }
+
+        input[type="submit"] {
+            width: 410px;
+            height: 50px;
+            margin-bottom: 40px;
+            margin-top: 36px;
+            padding-left: 30;
+            color: white;
+            background-color: black;
+            border: solid black;
+            border-radius: 15px;
+            font-size: 20px;
+
+        }
+
+        form {
+            display: flex;
+            width: 550px;
+            flex-direction: column;
+            align-items: start;
+            margin: 20px 0 30px 100px;
+            border: solid black;
+            justify-content: center;
+            align-items: center;
+            background-color: #ff9900;
+            border-radius: 25px;
+
+
+        }
+
+        input[name="h1"] {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        main {
+            background-color: black;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .abo {
+            height: 100px;
+            width: 200px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid black;
+            border-radius: 20px;
+            color: white;
+        }
+
+        .image {
+            display: flex;
+            margin-left: 65px;
+        }
+        .facebook {
+            background: url("icons8-facebook-48.png") no-repeat left;
+            background-size: 45px;
+            background-position-x: 65px;
+            padding-left: 70px;
+        }
+        .sighnup{
+            background: url("logo 2.png") no-repeat left;
+            background-size: 100px;
+            background-position-x: 45px;
+            padding-left: 70px;
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<main>
+    <div class="image"><img src="logo%20(1).png" alt=""></div>
+
+    <form>
+        <label for="Email"></label>
+        <input type="text" name="username" id="Email"
+               placeholder="Номер телефону,ім'я користувача або електронну адресу" required><sup>*</sup>
+
+
+        <label for="Password"></label>
+        <input type="text" name="password" id="Password" placeholder="Пароль" required><sup>*</sup>
+
+        <label for="button"></label>
+        <input type="submit" value="Увійти" name="button" id="button">
+
+        <div class="abo"><h1>AБО</h1></div>
+       <input class="facebook" type="submit" value="Увійти через Facebook" >
+        <br>
+
+        <input class="sighnup" type="submit" value="Зареєструватися">
+
+
+    </form>
+</main>
+</body>
+</html>
